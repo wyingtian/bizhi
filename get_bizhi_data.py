@@ -8,4 +8,4 @@ labels = ['rank', 'name', 'market_cap_cny', 'price_cny', 'available_supply', '24
 df = pd.DataFrame.from_records(res, columns=labels)
 df.rename(columns = {'rank':'排名', 'name':'币种','market_cap_cny':'市值', 'price_cny':'价格', 'available_supply':'流通数', '24h_volume_cny':'24小时成交量', 'percent_change_24h':'24小时涨跌'}, inplace=True)
 
-df.to_csv('data/data.csv', index=False)
+df.to_csv('/static/data/data.csv', index=False)
